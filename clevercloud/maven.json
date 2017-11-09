@@ -1,0 +1,10 @@
+  {
+  "build": {
+    "type": "maven",
+    "goal": "package"
+  },
+  "deploy": {
+	"jarName": "./target/oauth-consumer-server-0.0.1.jar"
+  }
+}
+
