@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>com.clevercloud</groupId>
-	<artifactId>oauth-consumer-server</artifactId>
-	<version>0.0.1</version>
-	<packaging>jar</packaging>
-
-	<name>oauth-consumer-server</name>
-	<description>Help you retrieve tokens to use the Clever Cloud API</description>
-
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.8.RELEASE</version>
+		<version>3.4.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-
+	<groupId>com.clevercloud</groupId>
+	<artifactId>oauth-consumer-server</artifactId>
+	<version>0.0.2</version>
+	<name>oauth-consumer-server</name>
+	<description>Help you retrieve tokens to use the Clever Cloud API</description>
+	<url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-		<jersey-version>2.22.2</jersey-version>
+		<java.version>21</java.version>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -32,24 +36,14 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.glassfish.jersey.security</groupId>
-			<artifactId>oauth1-client</artifactId>
-			<version>${jersey-version}</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.glassfish.jersey.core</groupId>
-			<artifactId>jersey-client</artifactId>
-			<version>${jersey-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.jersey.media</groupId>
-			<artifactId>jersey-media-multipart</artifactId>
-			<version>${jersey-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.jersey.media</groupId>
-			<artifactId>jersey-media-json-jackson</artifactId>
-			<version>${jersey-version}</version>
+				<groupId>com.github.scribejava</groupId>
+				<artifactId>scribejava-apis</artifactId>
+				<version>8.3.3</version>
 		</dependency>
 	</dependencies>
 
@@ -61,6 +55,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
 
 </project>

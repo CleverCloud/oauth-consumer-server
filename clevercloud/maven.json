@@ -4,7 +4,7 @@
     "goal": "package"
   },
   "deploy": {
-	"jarName": "./target/oauth-consumer-server-0.0.1.jar"
+	"jarName": "./target/oauth-consumer-server-0.0.2.jar"
   }
 }
 
