@@ -91,5 +91,5 @@ class OAuthController {
 			logger.error(e.getMessage());
 			return e.getMessage();
 		}
-	}
+	} 
 }
