@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="/authenticate" method="GET">
+        <label>Consumer Key:</label>
+        <input type="text" name="consumerKey" required>
+        <br>
+        <label>Consumer Secret:</label>
+        <input type="password" name="consumerSecret" required>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
